@@ -1,0 +1,123 @@
+INSERT INTO etat (designation) VALUES ("Neuf"),("Bon état"), ("Mauvais état");
+
+INSERT INTO etiquette (designation) VALUES ("Best seller"),("En Promo"), ("Saint Valentin"), ("A la une");
+
+INSERT INTO produit (prix, nom, code, description, etat_id) VALUES
+                                                                (20.99, "Ecouteurs Bluetooth sans Fil, AOVOCE Casque Bluetooth 5.3 avec 4 ENC Réduction Bruit", "AOVOCEA60B", "La nouvelle génération de puce Bluetooth 5.3 personnalisée du écouteurs Bluetooth sans fil A60Pro est deux fois plus rapide que la génération précédente (Bluetooth 5.2) et a une distance de transmission quatre fois plus longue. Audio de haute qualité plus rapide et plus stable (portée de transmission jusqu'à 15 m). Grâce à la fonction mémoire, le casque se connecte automatiquement à votre téléphone (après la première connexion).", 1),
+                                                                (11.99, "Chargeur USB C 20W Rapide Prise", "ChrgUSBC20WAnlikool", "L'adaptateur de multiple prise USB est fabriqué en matériau ignifuge PC et fournit des protections multiples, y compris un court-circuit anti-sortie, une surintensité intégrée, une surtension et une protection contre la surchauffe. Assure votre sécurité et celle de vos appareils. Portables Telephone Caricatore usb c rapide et sûr.", 1),
+                                                                (15.50, "Tapis de Souris Gaming XXL 900 x 400 mm", "TapisGamingXXL", "Ce tapis de souris gaming est assez grand pour accueillir votre souris, votre clavier et d'autres objets de bureau. La surface lisse offre une meilleure expérience de glisse et une précision accrue. Le dessous en caoutchouc antidérapant maintient le tapis en place pendant que vous jouez.", 1),
+                                                                (9.99, "Câble USB Type C [1m/3.3ft, Lot de 2]", "CableUSBC", "Ces câbles USB Type C sont compatibles avec une large gamme de périphériques, y compris les smartphones, les tablettes et les ordinateurs portables. Ils offrent une charge rapide et une transmission de données stable. Leur longueur de 1m les rend pratiques pour une utilisation quotidienne.", 1),
+                                                                (29.95, "Casque Gaming avec Micro pour PS4", "CasquePS4Gaming", "Ce casque gaming est spécialement conçu pour la PS4, offrant un son de qualité supérieure et un microphone cristallin pour des communications claires. Les écouteurs rembourrés et le bandeau réglable offrent un confort optimal lors de longues sessions de jeu.", 1),
+                                                                (39.99, "Webcam HD 1080P avec Microphone", "WebcamHD1080P", "Cette webcam HD 1080P offre une qualité vidéo exceptionnelle pour les appels vidéo, les diffusions en direct et les enregistrements. Elle est dotée d'un microphone intégré pour un son clair et d'un clip réglable pour une installation facile sur votre écran ou votre bureau.", 1),
+                                                                (49.99, "Enceinte Bluetooth Portable Étanche", "EnceinteBluetoothEtanche", "Cette enceinte Bluetooth portable est étanche et résistante aux chocs, parfaite pour une utilisation en extérieur ou lors de vos déplacements. Elle offre un son cristallin et des basses profondes, ainsi qu'une autonomie de batterie allant jusqu'à 10 heures.", 1),
+                                                                (14.99, "Lampe de Bureau LED avec Chargeur sans Fil", "LampeBureauLED", "Cette lampe de bureau LED offre un éclairage réglable et une fonction de charge sans fil pour les smartphones compatibles. Elle dispose de plusieurs modes d'éclairage et d'un design moderne et élégant qui s'intègre facilement à tout espace de travail.", 1),
+                                                                (59.99, "Imprimante Multifonction WiFi", "ImprimanteWiFiMultifonction", "Cette imprimante multifonction WiFi vous permet d'imprimer, de numériser et de copier facilement vos documents depuis n'importe quel appareil compatible WiFi. Elle offre une impression rapide et de haute qualité, ainsi qu'une connectivité facile avec votre smartphone ou votre ordinateur.", 1),
+                                                                (34.95, "Clavier Mécanique Rétro-Éclairé RGB", "ClavierMecaniqueRGB", "Ce clavier mécanique rétro-éclairé RGB offre une expérience de frappe précise et confortable, idéale pour les jeux et la saisie de texte intensive. Il est doté de touches rétro-éclairées personnalisables et d'une construction robuste pour une durabilité accrue.", 1),
+                                                                (79.99, "Écouteurs sans Fil Bose QuietComfort 35 II", "EcouteursBoseQuietComfort", "Les écouteurs sans fil Bose QuietComfort 35 II offrent un son exceptionnel et une réduction de bruit active pour une expérience d'écoute immersive. Ils sont confortables à porter pendant de longues périodes et offrent une connectivité Bluetooth fiable.", 1),
+                                                                (19.99, "Souris Gaming Filaire avec DPI Réglable", "SourisGamingFilaire", "Cette souris gaming filaire offre une précision de suivi élevée et une ergonomie confortable pour des sessions de jeu prolongées. Le DPI réglable vous permet d'ajuster la sensibilité selon vos préférences, offrant un contrôle précis dans chaque jeu.", 1),
+                                                                (69.99, "Moniteur Gaming 27 pouces Full HD 144Hz", "MoniteurGaming144Hz", "Ce moniteur gaming 27 pouces offre une résolution Full HD et un taux de rafraîchissement de 144Hz pour des images fluides et réactives. Il est doté de technologies avancées pour réduire le flou de mouvement et améliorer la clarté de l'image pendant le jeu.", 1),
+                                                                (24.99, "Tapis de Souris Gaming RGB Extra Large", "TapisGamingRGB", "Ce tapis de souris gaming extra large est doté d'un rétroéclairage RGB personnalisable pour une ambiance de jeu immersive. La surface lisse offre un suivi précis de la souris, tandis que la base en caoutchouc antidérapante maintient le tapis en place pendant que vous jouez.", 1),
+                                                                (89.99, "Casque Audio sans Fil Sony WH-1000XM4", "CasqueAudioSony", "Le casque audio sans fil Sony WH-1000XM4 offre un son exceptionnel et une réduction de bruit active de", 1);
+
+INSERT INTO etiquette_produit (produit_id, etiquette_id) VALUES
+                                                             (1, 1),
+                                                             (1, 4),
+                                                             (2, 1),
+                                                            (2, 2);
+
+
+INSERT INTO utilisateur (email, mot_de_passe, administrateur) VALUES
+("bansept.franck@gmail.com","$2a$10$82wSHZqkS/yjcZEMl9xrSepPQKoZb9cQUA.QcfBaCgBewuy0Nt4fm",1),
+("a@a.com","$2a$10$82wSHZqkS/yjcZEMl9xrSepPQKoZb9cQUA.QcfBaCgBewuy0Nt4fm",1),
+("utilisateur2@example.com", "$2a$10$uC1uxCdz0Fq/X7M1SHxwY.Bt9la.lqB9IqXlKgbmzEyyPtFDNpHNa", 0),
+("utilisateur3@example.com", "$2a$10$yH9i/GFojox6ln72.oY6iuy0jB9auWzRmEPcCv2XwclHeCgTGl8Ue", 0),
+("utilisateur4@example.com", "$2a$10$ZVnUqR6Hv8S/YpnCh18Se.j.JH42eg.kwWn.dh6rrwG2PqNY3sJpW", 0),
+("utilisateur5@example.com", "$2a$10$9YRsRc7WQoF4xGRz8WBP5.XACG4Y8ncZv1y1w4sGcOL.bEzlJyr.u", 0),
+("utilisateur6@example.com", "$2a$10$KY0YgeKgJLHrw1osU96Sx.4c7n6D89z7XcxyA2b5sF6adBFrxyhb2", 0),
+("utilisateur7@example.com", "$2a$10$RQrYR7IvK10PpPTM6o4vgez4WpzfNy1Uz/fNdq9m3jxKlb3KROy1W", 0),
+("utilisateur8@example.com", "$2a$10$Ukx1R9tfgm/.CMRNElTe4eSdCvnuZxLc8LkDap95Ls4UT9/5gtC5G", 0),
+("utilisateur9@example.com", "$2a$10$3nVZIS..04xv6L3VwC/sbuh/9Kgv4PTn1kLF6q8L.XquYw1GdOj22", 0),
+("utilisateur10@example.com", "$2a$10$LXsPPgTwP6z97kqD5MEIzOlBKkFSgU/44lMyBk2VRcR1YMDq0hGFW", 0),
+("utilisateur11@example.com", "$2a$10$.rSuvM9gsuWBYAv5bvtXiOiZ/iWFFfMvmWzBGxrYXIMuyzYIhRg16", 0),
+("utilisateur12@example.com", "$2a$10$CSrTuxRCzG3KmwPK9vQwVOb5vRUEycxsl6kQe6deSttEk3TCBf1lK", 0),
+("utilisateur13@example.com", "$2a$10$D38pZWEn8ufCQCRDgIyJOOuq4Oa2mjIcZaNS4kxEMlC76WBLzjRP2", 0),
+("utilisateur14@example.com", "$2a$10$QzUZxghhPqMxjclXzkvWfudVvZD6FEm5PQ75XZxvjJ28o5TVqsppq", 0),
+("utilisateur15@example.com", "$2a$10$0S7C3yozQJvze9g3aBbU0uEecy0IL0TP2GLFbQOhgR5TqzJh.sKzm", 0),
+("utilisateur16@example.com", "$2a$10$3C8ZLslT39F0oEUBJ0lukupHxwDhTlVRayJv0gUbYKL.p05J1fH3a", 0),
+("utilisateur17@example.com", "$2a$10$e8rCBXwT5pG/8J1f2k0DIuBxlWbXgyBMUxQ6G5quk6vmFjKw78KKm", 0),
+("utilisateur18@example.com", "$2a$10$UuEUK2Zsh7A0Q4bYp7eNzOzdJqsRRe7FGCX53CM0KFC6MVLlBJ78G", 0),
+("utilisateur19@example.com", "$2a$10$MqoVj0eAObKWklD3WxWSmew5ITpEMFLoUFzB4exC0DZn7hTvTXdrG", 0),
+("utilisateur20@example.com", "$2a$10$lw2VpfWmoCInY8fgdyyo6e2qCxcslExgKcZSyYs1aQkGT0f9q0h2G", 0),
+("utilisateur21@example.com", "$2a$10$7JSTOJYx/SaQsWCEpV6jx.aQDrHyB2FV6dILSGt7x.08F1vyi8d8a", 0),
+("utilisateur22@example.com", "$2a$10$P7f2xIhz6z0JXCl1H0c9vOb9zv1uxMX42vFGKpVicqzBc0dQvfFA2", 0),
+("utilisateur23@example.com", "$2a$10$j65SpVxnOzdWwT2ABGVnOeRqGZBPtE0N5n1BUHsDhe36I2jyK6r8m", 0),
+("utilisateur24@example.com", "$2a$10$up4zX6J9pYV0/Jw26l6m/.6yznMlpmO/6SQXHgJfSPQ7jg8EiA/mq", 0),
+("utilisateur25@example.com", "$2a$10$g4hAnBhVQXGWPOYyz4gRzeQk5HlfZ6hst7dcCSToKmiIUDVHbI/vy", 0);
+
+INSERT INTO statut (designation) VALUES
+("Non validée"), ("Validée"), ("Annulée"), ("Expédiée");
+
+INSERT INTO commande (date, client_id, statut_id) VALUES
+                                                      ("2024-01-03", 1, 4),
+                                                      ("2024-01-04", 1, 2),
+                                                      (NOW(), 3, 1),
+                                                      ("2024-01-05", 2, 3),
+                                                      ("2024-01-06", 2, 1),
+                                                      ("2024-01-07", 3, 2),
+                                                      ("2024-01-08", 3, 4),
+                                                      ("2024-01-09", 4, 1),
+                                                      ("2024-01-10", 4, 3),
+                                                      ("2024-01-11", 5, 2),
+                                                      ("2024-01-12", 5, 1),
+                                                      ("2024-01-13", 6, 4),
+                                                      ("2024-01-14", 6, 3),
+                                                      ("2024-01-15", 7, 1),
+                                                      ("2024-01-16", 7, 2),
+                                                      ("2024-01-17", 8, 3),
+                                                      ("2024-01-18", 8, 4),
+                                                      ("2024-01-19", 9, 2),
+                                                      ("2024-01-20", 9, 1),
+                                                      ("2024-01-21", 10, 4),
+                                                      ("2024-01-22", 10, 1),
+                                                      ("2024-01-23", 11, 2),
+                                                      ("2024-01-24", 11, 3),
+                                                      ("2024-01-25", 12, 1),
+                                                      ("2024-01-26", 12, 3),
+                                                      ("2024-01-27", 13, 2),
+                                                      ("2024-01-28", 13, 4),
+                                                      ("2024-01-29", 14, 1),
+                                                      ("2024-01-30", 14, 2),
+                                                      ("2024-01-31", 15, 4),
+                                                      ("2024-02-01", 15, 3),
+                                                      ("2024-02-02", 16, 1),
+                                                      ("2024-02-03", 16, 4),
+                                                      ("2024-02-04", 17, 2),
+                                                      ("2024-02-05", 17, 1),
+                                                      ("2024-02-06", 18, 3),
+                                                      ("2024-02-07", 18, 2),
+                                                      ("2024-02-08", 19, 1),
+                                                      ("2024-02-09", 19, 4),
+                                                      ("2024-02-10", 20, 3),
+                                                      ("2024-02-11", 20, 2),
+                                                      ("2024-02-12", 21, 4),
+                                                      ("2024-02-13", 21, 1),
+                                                      ("2024-02-14", 22, 3),
+                                                      ("2024-02-15", 22, 2),
+                                                      ("2024-02-16", 23, 1),
+                                                      ("2024-02-17", 23, 4);
+
+
+INSERT INTO ligne_commande (prix_de_vente, quantite, commande_id, produit_id) VALUES
+                                                                                  (11.99, 1, 1, 1),
+                                                                                  (21.50, 2, 1, 2),
+                                                                                  (8, 1, 2, 1),
+                                                                                  (11.99, 1, 3, 2),
+                                                                                  (15.75, 3, 4, 3),
+                                                                                  (10.50, 1, 4, 1),
+                                                                                  (29.99, 2, 5, 4),
+                                                                                  (5.99, 1, 5, 5),
+                                                                                  (18.50, 3, 6, 6),
+                                                                                  (7.25, 2, 6, 7),
+                                                                                  (14.99, 1, 7, 8),
+                                                                                  (9.75, 1, 7, 9),
+                                                                                  (22.99, 2, 8, 10);
